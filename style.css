@@ -10,4 +10,49 @@
     /* DIVIDERS */
     --light-grayish-blue: hsl(240, 5%, 91%);
 }
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+.attribution{
+    position: absolute;
+    bottom:0;
+    margin: 0;
+    left:40%;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    /* gradient background */
+    background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.title-typo{
+    font-size: 2rem;
+}
+.questions-typo {
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+}
+.answers-typo{
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+/* DESKTOP DESIGN */
+@media screen and (min-width: 375px){
+    
+}
