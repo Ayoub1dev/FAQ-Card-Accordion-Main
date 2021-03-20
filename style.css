@@ -18,6 +18,7 @@
     margin: 0;
     left:40%;
 }
+/* general design both in mobile and desektop */
 html {
     box-sizing: border-box;
   }
@@ -39,17 +40,26 @@ body{
 }
 
 .title-typo{
-    font-size: 1.2rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.56rem;
+    color:var(--dark-desaturated-blue)
 }
 .questions-typo {
-    font-size: 0.7rem;
+    color: var(--very-dark-grayish-blue);
+    font-size: 0.75rem;
     font-family: inherit;
     font-weight: 400;
 }
 .answers-typo{
+    color:var(--dark-grayish-blue);
     font-size: 0.7rem;
     font-family: inherit;
     font-weight: 400;
+}
+
+.faq-container{
+    margin: 30px 0;
+    width: 300px ;
 }
 
 
@@ -57,17 +67,53 @@ body{
     display: none;
 }
 
+.question {
+    background-color: white;
+    border: none;
+    border-bottom: 1px var(--light-grayish-blue) solid;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: left;
+}
+.question:hover{
+    color: var(--soft-red);
+}
+.question::after {
+    content: "";
+    
+    display: block;
+    width: 0.7rem;
+    height: 0.8rem;
+    background-image: url(images/icon-arrow-down.svg);
+    background-size: contain;
+    background-repeat:repeat-x;
+    background-position: center;
+}
+.answer{
+    display: none;
+}
+.card {
+    
+}
+/* mobil;e design */
+
+
 /* DESKTOP DESIGN */
 @media screen and (min-width: 375px){
     .card {
         position: relative;
         background-color: white;
-        width: 820px;
+        /* min-width: 900px; */
+        max-width: 750px;
         margin: 107px auto;
         border-radius: 15px;
         
         display:flex;
-        align-items: center;
+        box-shadow: 0 10px 30px 5px #5840B8;
     }
     .desktop-image{
         display: block;
@@ -83,20 +129,19 @@ body{
     .woman-image{
         position: relative;
         width:390px;
+        height: 295px;
         left:-65px;
+        margin: 31.5px 0;
         
     }
     .image-container {
-        content: "";
-        background-image: url();
-        overflow: hidden;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: 620px 620px;
+        background-position: -310px -155px;
+        background-repeat: no-repeat;
 
-        margin-right: 50px;
-        padding-right: 70px;
+        overflow: hidden;
     }
-    .faq-container{
-        
-    }
-    .faq-dropdowns{
-    }
+    
+    
 }
