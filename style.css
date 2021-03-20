@@ -39,20 +39,64 @@ body{
 }
 
 .title-typo{
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 .questions-typo {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-family: inherit;
     font-weight: 400;
 }
 .answers-typo{
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-family: inherit;
     font-weight: 400;
 }
 
+
+.desktop-image{
+    display: none;
+}
+
 /* DESKTOP DESIGN */
 @media screen and (min-width: 375px){
-    
+    .card {
+        position: relative;
+        background-color: white;
+        width: 820px;
+        margin: 107px auto;
+        border-radius: 15px;
+        
+        display:flex;
+        align-items: center;
+    }
+    .desktop-image{
+        display: block;
+    }
+    .box-image{
+        
+        width: 170px;
+        position: absolute;
+        left: -83px;
+        top: 130px;
+        z-index: 2
+    }
+    .woman-image{
+        position: relative;
+        width:390px;
+        left:-65px;
+        
+    }
+    .image-container {
+        content: "";
+        background-image: url();
+        overflow: hidden;
+
+        margin-right: 50px;
+        padding-right: 70px;
+    }
+    .faq-container{
+        
+    }
+    .faq-dropdowns{
+    }
 }
