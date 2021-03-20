@@ -78,6 +78,9 @@ body{
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: left;
+
+    outline: none;
+    cursor:pointer;
 }
 .question:hover{
     color: var(--soft-red);
@@ -94,7 +97,10 @@ body{
     background-position: center;
 }
 .answer{
-    display: none;
+    /* display: none; */
+}
+.active {
+    font-weight: 700;
 }
 .card {
     
