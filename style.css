@@ -70,7 +70,7 @@ body{
 .question {
     background-color: white;
     border: none;
-    border-bottom: 1px var(--light-grayish-blue) solid;
+    
     width:100%;
     display:flex;
     justify-content: space-between;
@@ -95,6 +95,9 @@ body{
     background-size: contain;
     background-repeat:repeat-x;
     background-position: center;
+}
+.panel{
+    border-bottom: 1px var(--light-grayish-blue) solid;
 }
 .answer{
     /* display: none; */
