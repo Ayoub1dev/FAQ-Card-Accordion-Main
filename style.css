@@ -100,7 +100,7 @@ body{
     border-bottom: 1px var(--light-grayish-blue) solid;
 }
 .answer{
-    /* display: none; */
+    display: none;
 }
 .active {
     font-weight: 700;
